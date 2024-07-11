@@ -10,20 +10,20 @@ import {
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
 function page() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   console.log("Form submitted");
+  // };
   return (
     <div className="h-full relative w-full overflow-hidden  bg-slate-900 flex flex-col items-center justify-center rounded-lg">
       <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
       <Boxes />
       <div className="max-w-xl w-full mx-auto rounded-none z-30  md:rounded-2xl p-4 mt-36 mb-20 md:p-8 shadow-input bg-white dark:bg-black">
         <h2 className="font-bold text-3xl text-neutral-800 text-center dark:text-neutral-200">
-          Let's Talk...
+          Let&apos;s Talk...
         </h2>
 
-        <form className="my-8" onSubmit={handleSubmit}>
+        <form className="my-8">
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
             <LabelInputContainer>
               <Label htmlFor="firstname">First name</Label>

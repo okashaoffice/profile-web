@@ -40,7 +40,7 @@ function Cards() {
       <div className="grid grid-cols-3 mob:grid-cols-1 gap-y-10 p-10 pl-20">
         {CardsData.map((data) => {
           return (
-            <div className="">
+            <div className="" key={data.title}>
               <div className=" w-full h-full relative max-w-xs">
                 <div className="absolute inset-0 w-full  bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
                 <div className="relative shadow-xl bg-gray-900 border h-[20rem] pt-10 border-gray-800  px-4   overflow-hidden rounded-2xl  justify-end items-start">
